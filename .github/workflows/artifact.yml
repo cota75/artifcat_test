@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check out the code
-        use: actions/checkout@v2
+        run: actions/checkout@v2
       - name: Upload the artifact
-        use: actions/upload-artifact@v2
+        run: actions/upload-artifact@v2
         with:
           name: $(( env.ARTIFACT_NAME ))
           path: . 
